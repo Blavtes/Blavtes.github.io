@@ -4,7 +4,7 @@ email: yynngg_1989@163.com
 description: > # this means to ignore newlines until "baseurl:"
   Blavtes的博客
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: http://yayog.top # the base hostname & protocol for your site
+url: http://Blavtes.com # the base hostname & protocol for your site
 rss_url: /pages/feed.xml
 author: Blavtes
 
@@ -22,7 +22,7 @@ favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
 
 # disqus config
 disqus:
-  shortname: yayog-zh
+  shortname: Blavtes-zh
 
 # google analytics config
 # ga:

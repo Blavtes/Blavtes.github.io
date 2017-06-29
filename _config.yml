@@ -4,7 +4,7 @@ email: yynngg_1989@163.com
 description: > # this means to ignore newlines until "baseurl:"
   Blavtes的博客
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: http://Blavtes.com # the base hostname & protocol for your site
+url: http://www.yayog.top # the base hostname & protocol for your site
 rss_url: /pages/feed.xml
 author: Blavtes
 

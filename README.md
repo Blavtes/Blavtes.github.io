@@ -11,6 +11,10 @@
 5. 修改`_config.yml`配置项
 6. It's done!
 
+### 测试
+
+Jekyll server
+
 ### 分支说明
 
 - 三栏布局（master分支，基于[3-Jekyll](https://github.com/P233/3-Jekyll)）

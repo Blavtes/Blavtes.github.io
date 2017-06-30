@@ -1,4 +1,12 @@
-# 打包framework（Xcode7&OSX10.11）兼容各种cpu类型
+---
+layout: post
+title: 打包Framework
+category: 技术
+tags: Framework
+description: 脚本打包framework（Xcode7&OSX10.11）兼容各种cpu类型
+---
+## 打包framework（Xcode7&OSX10.11）兼容各种cpu类型
+
 ###第一步新建工程
 
 	选择Framework & Library => Cocoa Touch Framework
@@ -48,5 +56,3 @@ rm -r "${WRK_DIR}"
 #open "${SRCROOT}/Products/"
 
 ```
-	
-	

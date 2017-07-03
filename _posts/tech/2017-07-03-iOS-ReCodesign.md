@@ -1,4 +1,12 @@
-#ipa 重签名
+---
+layout: post
+title: ipa 重签名
+category: 技术
+tags: 重签名
+description: ipa 重签名
+---
+
+##ipa 重签名
 
 ###重签名ipa 有两种方式：
 	

@@ -8,20 +8,26 @@ description: 脚本打包framework（Xcode7&OSX10.11）兼容各种cpu类型
 ## 打包framework（Xcode7&OSX10.11）兼容各种cpu类型
 
 ###第一步新建工程
-
 	选择Framework & Library => Cocoa Touch Framework
+	
+![step1](http://oshs6ulbi.bkt.clouddn.com/framework-step1)
 
 ###第二步新建Framework项目，eg：TestFramework
+
+![step1](http://oshs6ulbi.bkt.clouddn.com/framework-step2)
 
 ###第三步在已有target中新建一个target，eg：TesetBuild
 
 	1.选择Cross-platform 分类
+
 	2.选择 Aggregate 目标
+![step1](http://oshs6ulbi.bkt.clouddn.com/framework-step3)
 
 ###设置TesetBuild编译条件
 
 	1.BuildSettings的Mach-O Type=> static Library
 	2.Build Phases，Run Script 
+![step1](http://oshs6ulbi.bkt.clouddn.com/framework-step4)
 
 ###通用脚本 Script
 

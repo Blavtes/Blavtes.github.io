@@ -6,7 +6,7 @@ tags: 重签名
 description: iOS异常捕获-堆栈信息的解析
 --- 
 
-###最近使用NSSetUncaughtExceptionHandler和signal方法捕获异常，并传到服务器，用来追踪线上app的异常信息。
+### 最近使用NSSetUncaughtExceptionHandler和signal方法捕获异常，并传到服务器，用来追踪线上app的异常信息。
 
 但是捕获到的都是堆栈信息： 
 异常堆栈信息
@@ -21,7 +21,7 @@ description: iOS异常捕获-堆栈信息的解析
 ```
 如何利用这些堆栈信息查看报错方法名和行数？
 
-#异常信息
+# 异常信息
 
 异常信息有三种类型：
 
@@ -43,11 +43,11 @@ description: iOS异常捕获-堆栈信息的解析
 3.无模块地址的情况：
 	test 0x000000010022db80 test + 234234
 
-##dSYM符号表获取
+## dSYM符号表获取
 
 	xcode->window->organizer->右键你的应用 show finder->右键.xcarchive 显示包内容->dSYMs->test.app.dYSM
 
-##atos命令
+## atos命令
 
 atos命令来符号化某个特定模块加载地址
 
@@ -55,13 +55,13 @@ atos命令来符号化某个特定模块加载地址
 
 解析
 
-#使用终端，进到test.app.dYSM所在目录
+# 使用终端，进到test.app.dYSM所在目录
 
-###一.如果是有模块地址的情况，运行：
+### 一.如果是有模块地址的情况，运行：
 
 	atos -arch arm64 -o test.app.dSYM/Contents/Resources/DWARF/test -l 0x100050000 0x000000010022db80
 
-###二.如果是无模块地址的情况
+### 二.如果是无模块地址的情况
 
 1.先将偏移地址转为16进制：
 

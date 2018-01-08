@@ -8,31 +8,32 @@ description: iOS编码风格指南
 
 # iOS编码风格指南
 
-
-##前言
+###前言
 
 - 为了*`保持代码一致性`*和易于 *`Code Review`*，本文档整理了*`iOS`* 开发应遵循的基本规范。
 	
 - 本编码风格指南将用于*`iOS项目`*的**`Objective-C`**编码规范。
 
 
-##主要参考规范
+###主要参考规范
 
 ###[*Google Objective-C Style Guide*](google.github.io/styleguide/objcguide.xml)
+
 ###[*The Objective-C Programming Language*](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html)
+
 ###[*iOS App Programming Guide*](https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Introduction/Introduction.html)
 
-##语言
+###语言
 
 - 所有**`代码文件`**、**`资源文件`**均使用**`US英语`**
 
-##命名规则
+###命名规则
 
 - 小驼峰命名法，例如：*`userName`*
 
 - 大驼峰命名法，例如：*`ProductDetailViewController`*
 
-##常量
+###常量
 
 - 常量是容易重复被使用和无需通过查找和代替就能快速修改值。常量应该使用*`static`*而不是使用*`#define`*，除非显示地使用宏。例如:
 		
@@ -42,7 +43,7 @@ description: iOS编码风格指南
 	static NSString * const CommonNotificationName = @"foo";
 	```
 	
-##字面值
+###字面值
 
 - **`NSString`**、**`NSDictionary`**、**`NSArray`**和**`NSNumber`**的字面值应该在创建这些类的不可变实例时被使用。请特别注意*`nil`*值不能传入**`NSArray`**和**`NSDictionary`**字面值，因为这样会导致*`crash`*。
 
@@ -54,13 +55,13 @@ description: iOS编码风格指南
 	NSNumber *buildingStreetNumber = @10018;
 	```
 	
-##枚举
+###枚举
 
 - 当使用**`enum`**时，推荐使用新的固定基本类型规则，因为它有更强的类型检查和代码补全。当前枚举使用*`NS_ENUM()`*		/**		 *
 		 */		typedef NS_ENUM(NSUInteger, CustomTipType)		{			NoDataType = 0, //    			NoProductType //     
 		};
 		
-##Block
+###Block
 
 - 使用*`Block`*时，内容四个空格缩进，`^`后带有参数时，参数与`{`之间有一个缩进：
 
@@ -72,7 +73,7 @@ description: iOS编码风格指南
 			// something
 		}];
 	
-##类、方法
+###类、方法
 
 - 类名首字母大写，方法首字母小写，方法中参数首字母小写。
 
@@ -117,7 +118,7 @@ description: iOS编码风格指南
 	int selectedBtnIndex = selectedIndex;
 	```
 
-##代码组织
+###代码组织
 
 - 任意函数长度不得超过`80`行
 
@@ -214,7 +215,7 @@ description: iOS编码风格指南
 	}];
 	```
 
-##方法选择
+###方法选择
 
 - 使用*`[]`*、*`index`*取数组元素时，一定需要先判断数组个数是否大于索引。
 
@@ -235,7 +236,7 @@ description: iOS编码风格指南
 - 对应*`字体`*、*`颜色`*等必要使用*`宏`*定义，避免直接上代码
 - 对于需要响应点击的文字视图，优先使用*`UIButton`*类。避免使用*`UILabel`*类加手势。
 
-##注释
+###注释
 
 - 原则上遵循**`代码自注释原则`**，开发环境较复杂时，尽量保证每个小逻辑有必要的注释
 
@@ -243,7 +244,7 @@ description: iOS编码风格指南
 
 - 逻辑模块与模块之间，使用*`#pragma mark`*来分割，方便阅读代码
 
-##其他Objective-C编码规范
+###其他Objective-C编码规范
 
 - 如果本编码规范不符合你的口味，可以查看其他编码规范：
-	[*CocoaDevCentral*](http://cocoadevcentral.com/articles/000082.php)
+	*[*CocoaDevCentral*](http://cocoadevcentral.com/articles/000082.php)*

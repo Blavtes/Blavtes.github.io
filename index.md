@@ -18,5 +18,5 @@ layout: post
 我博客的源码托管在[Github](https://github.com/Blavtes/Blavtes.github.io)上，如果有任何改进意见，欢迎讨论。
 
 
-当然你也可以赞助我，帮助我持续写作 ^ _^
-![image](http://oshs6ulbi.bkt.clouddn.com/wx/image.png?imageView2/1/w/200/h/200/interlace/1/q/100)
+当然你也可以赞助我，帮助我持续更新 ^ _^
+![image](http://oshs6ulbi.bkt.clouddn.com/wx2/image.png)

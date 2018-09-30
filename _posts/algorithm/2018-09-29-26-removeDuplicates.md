@@ -1,9 +1,9 @@
 ---
 layout: post
-title:删除排序数组中的重复项#26
+title: 删除排序数组中的重复项#26
 category: 算法
 tags: C
-description:删除排序数组中的重复项#26
+description: 删除排序数组中的重复项#26
 --- 
 ### 目标
 

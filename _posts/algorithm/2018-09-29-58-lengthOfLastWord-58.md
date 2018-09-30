@@ -39,7 +39,7 @@ description: 最后一个单词的长度#58
 	    return n;
 	}
 	
-输入：
+输入:
 	
 	 "Hello World"
 

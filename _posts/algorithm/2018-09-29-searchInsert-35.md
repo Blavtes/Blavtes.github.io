@@ -1,9 +1,9 @@
 ---
 layout: post
-title: #35搜索插入位置
+title: 搜索插入位置#35
 category: 算法
 tags: C
-description: #35搜索插入位置
+description: 搜索插入位置#35
 --- 
 
 ### 目标

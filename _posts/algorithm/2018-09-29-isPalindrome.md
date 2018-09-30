@@ -1,9 +1,9 @@
 ---
 layout: post
-title: #9回文数 
+title: 回文数 #9
 category: 算法
 tags: C
-description: #9回文数 
+description: 回文数 #9
 --- 
 ### 目标
 

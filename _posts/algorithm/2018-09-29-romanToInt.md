@@ -1,9 +1,9 @@
 ---
 layout: post
-title: #13罗马数字转整数
+title: 罗马数字转整数#13
 category: 算法
 tags: C
-description: #13罗马数字转整数
+description: 罗马数字转整数#13
 --- 
 ### 目标
 

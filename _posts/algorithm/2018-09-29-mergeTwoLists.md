@@ -1,9 +1,9 @@
 ---
 layout: post
-title: #21合并两个有序链表
+title: 合并两个有序链表#21
 category: 算法
 tags: C
-description: #21合并两个有序链表
+description: 合并两个有序链表#21
 --- 
 ### 目标
 将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 

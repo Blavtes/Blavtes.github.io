@@ -1,9 +1,9 @@
 ---
 layout: post
-title: #14最长公共前缀
+title: 最长公共前缀#14
 category: 算法
 tags: C
-description: #14最长公共前缀
+description: 最长公共前缀#14
 --- 
 ### 目标
 

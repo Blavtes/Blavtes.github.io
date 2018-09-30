@@ -3,7 +3,7 @@ layout: post
 title: 搜索插入位置#35
 category: 算法
 tags: C
-description: 简单
+description: 搜索插入位置#35
 --- 
 
 ### 目标

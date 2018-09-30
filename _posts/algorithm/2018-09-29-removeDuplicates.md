@@ -3,7 +3,7 @@ layout: post
 title: #26删除排序数组中的重复项
 category: 算法
 tags: C
-description: 简单
+description: #26删除排序数组中的重复项
 --- 
 ### 目标
 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。

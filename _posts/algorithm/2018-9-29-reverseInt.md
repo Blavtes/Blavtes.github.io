@@ -3,7 +3,7 @@ layout: post
 title: #7反转整数 
 category: 算法
 tags: C
-description: 简单
+description: #7反转整数 
 --- 
 ### 目标
 

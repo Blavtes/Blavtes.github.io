@@ -3,7 +3,7 @@ layout: post
 title: #14最长公共前缀
 category: 算法
 tags: C
-description: 简单
+description: #14最长公共前缀
 --- 
 ### 目标
 

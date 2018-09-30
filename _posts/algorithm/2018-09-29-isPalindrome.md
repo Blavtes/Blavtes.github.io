@@ -3,7 +3,7 @@ layout: post
 title: #9回文数 
 category: 算法
 tags: C
-description: 简单
+description: #9回文数 
 --- 
 ### 目标
 

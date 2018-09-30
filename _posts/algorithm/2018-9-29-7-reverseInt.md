@@ -1,9 +1,9 @@
 ---
 layout: post
-title:反转整数  #7
+title:反转整数#7
 category: 算法
 tags: C
-description: 反转整数  #7
+description: 反转整数#7
 --- 
 ### 目标
 

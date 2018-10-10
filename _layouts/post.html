@@ -35,7 +35,7 @@ layout: default
 <script>
     var gitment = new Gitment({
     id: '<%= page.date %>',
-        owner: '{{site.github_username}}',
+        owner: '{{site.comment_gitment_owner}}',
         repo: '{{site.comment_gitment_repo}}',
         oauth: {
             client_id: '{{site.comment_gitment_clientId}}',

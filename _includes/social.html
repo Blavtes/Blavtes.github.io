@@ -19,12 +19,22 @@
   <a href="https://www.instagram.com/{{ site.instagram }}" class="sidebar-social-icon instagram" target="_blank"></a>
 {% endif %}
 
-{% if page.comments != false %}
-    <script>
-    var idcomments_acct = 'blavtes';
-    var idcomments_post_id = '{{ page.url }}';
-    var idcomments_post_url;
-    </script>
-    <span id="IDCommentsPostTitle" style="display:none"></span>
-    <script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+{% if site.comment_gitment_repo %}
+
+<div id="gitmentContainer"></div>
+<!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
+<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+<script src="https://billts.site/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        owner: '{{site.author}}',
+        repo: '{{site.comment_gitment_repo}}',
+        oauth: {
+            client_id: '{{site.comment_gitment_clientId}}',
+            client_secret: '{{site.comment_gitment_clientSecret}}',
+        },
+    });
+    gitment.render('gitmentContainer')
+</script>
 {% endif %}

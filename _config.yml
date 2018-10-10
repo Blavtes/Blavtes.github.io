@@ -45,6 +45,7 @@ gems:
   - jekyll-feed
 
 #gitment
+comment_gitment_owner: Blavtes
 comment_gitment_repo: Blavtes.github.io
 comment_gitment_clientId: 107136b2acba62454cdd
 comment_gitment_clientSecret: 3bca1decc51ec6d9d80e4c2afcec3a1a4742f62a

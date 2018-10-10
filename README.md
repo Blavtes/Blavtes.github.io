@@ -1,6 +1,6 @@
 ### 我的博客
 
-地址：[http://yangy.xin](http://yangy.xin)
+地址：[http://yscos.top](http://yscos.top)
 
 ### 安装说明
 

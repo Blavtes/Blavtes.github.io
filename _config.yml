@@ -19,7 +19,8 @@ github: Blavtes
 # avatar and Favicon
 avatar: http://oshs6ulbi.bkt.clouddn.com/homeImage_1.jpg
 favicon: http://oshs6ulbi.bkt.clouddn.com/homeImage_1.jpg
-
+# 评论
+intensedebate_comments: true
 # disqus config
 disqus:
   shortname: Blavtes-zh

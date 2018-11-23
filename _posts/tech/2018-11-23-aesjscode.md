@@ -6,6 +6,84 @@ tags: AES
 description: AES-JavaScript加解密
 ---
 
+AES 加密解密解析
+
+概述
+
+AES 即 高级加密标准（英语：Advanced Encryption Standard，缩写：AES），在密码学中又称Rijndael加密法，是美国联邦政府采用的一种区块加密标准。这个标准用来替代原先的DES，已经被多方分析且广为全世界所使用
+
+原理
+
+AES加密过程是在一个4×4的字节矩阵上运作，这个矩阵又称为“体（state）”，其初值就是一个明文区块（矩阵中一个元素大小就是明文区块中的一个Byte）。（Rijndael加密法因支持更大的区块，其矩阵行数可视情况增加）加密时， 各轮AES加密循环（除最后一轮外）均包含4个步骤：
+
+AddRoundKey—矩阵中的每一个字节都与该次回合密钥（round key）做XOR运算；每个子密钥由密钥生成方案产生。 SubBytes—通过一个非线性的替换函数，用查找表的方式把每个字节替换成对应的字节。 ShiftRows—将矩阵中的每个横列进行循环式移位。 MixColumns—为了充分混合矩阵中各个直行的操作。这个步骤使用线性转换来混合每内联的四个字节。最后一个加密循环中省略MixColumns步骤，而以另一个AddRoundKey替换。
+
+加密模式
+
+AES有5种工作模式，分别为CBC、ECB、CTR、OCF、CFB
+
+电码本模式（```Electronic Codebook Book (ECB)）```
+密码分组链接模式（```Cipher Block Chaining (CBC)```）
+计算器模式（```Counter (CTR)```）
+密码反馈模式（```Cipher FeedBack (CFB)```）
+输出反馈模式（```Output FeedBack (OFB)```）
+填充方式
+
+填充方式, 有``` Pkcs7, AnsiX923, Iso10126, Iso97971, ZeroPadding, NoPadding```
+
+加密解密
+
+在此介绍的AES加密解密方法用到基本库是
+	
+	 crypto-js ，JavaScript library of crypto standards.。
+
+首先 按照 README文件中的 步骤导入 该库
+
+（1）ECB ZEROPadding 加密 解密 加密：
+
+	
+	const cipher = CryptoJS.AES.encrypt(message, key, {
+ 	 mode: CryptoJS.mode.ECB,
+ 	 padding: CryptoJS.pad.ZeroPadding,
+  	iv: '',
+	});
+// 将加密后的数据转换成 Base64
+	
+	const base64Cipher = cipher.ciphertext.toString(CryptoJS.enc.Base64);
+解密：
+
+
+	const decipher = CryptoJS.AES.decrypt(encrypted, key, { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.ZeroPadding, iv: '', });
+
+// 将解密对象转换成 UTF8 的字符串 
+
+	const resultDecipher = CryptoJS.enc.Utf8.stringify(decipher);
+
+（2）ECB NOPadding 加密 解密 nopadding 的填充方式特别注意 因为涉及到加密字符串的长度 对齐问题，如果不处理 原字符串 解密会直接出错
+
+加密前 首先将加密的字符串 处理一下： 如： 补齐字符 需要和后台协商 ，要前端和后台需一致 在此用 空格代替
+
+	if(message.length%16!==0){ var numChar = 16-message.length%16; for(var i=0;i<numChar;i++){ message =message+' '; } }
+
+处理后 对处理后的字符串进行加密：
+
+处理后 对处理后的字符串进行加密：
+
+	const cipher = CryptoJS.AES.encrypt(message, key, { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.NoPadding, iv: '', }); // 将加密后的数据转换成 Base64 const base64Cipher = cipher.ciphertext.toString(CryptoJS.enc.Base64);
+
+解密：
+
+	const decipher = CryptoJS.AES.decrypt(encrypted, key, { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.NoPadding, iv: '', });
+
+// 将解密对象转换成 UTF8 的字符串
+	
+	 const resultDecipher = CryptoJS.enc.Utf8.stringify(decipher);
+
+解密出的字符串是我们加长后的 需要去除后面 添加的字符
+	
+	 cont resultStr = resultDecipher.Rtrim() ;
+
+
 react-js 和微信小程序使用aes加解密示例
 
 

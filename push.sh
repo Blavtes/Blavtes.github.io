@@ -1,3 +1,3 @@
 git add *
-git commit -a -m 'add some file'
+git commit -a -m 'change some file.'
 git push -u origin master

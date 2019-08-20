@@ -78,3 +78,19 @@ description: 查找私有api
 	
 	echo "------- end processing -------"
 	
+
+
+#检测IPA包
+1、首先你有个可以提交审核的ipa，就是打包的第一个，不是测试的release。
+
+2、将ipa重命名为zip格式，解压。如果有两个文件夹Payload、Symbols，就OK。
+
+3、cd到Payload里面的app
+
+4、有两种方式可以检测打包文件是否包含字符串
+	
+	 #pinduoduo.app strings - -a -arch armv7 "pingduoduo" | grep dlsym
+	
+	（1） strings - -a -arch armv7 "pingduoduo" | grep dlsym
+	
+	（2）strings - -a -arch armv7 "pingduoduo" > test.txt

@@ -134,3 +134,8 @@ JSContext *context = [_mainWebView valueForKeyPath:@"documentView.webView.mainFr
 NSString *alertJS= [NSString stringWithFormat:@"scanResult('%@')",我是结果信息];
 [context evaluateScript:alertJS];
 
+```
+
+### android  实现
+
+https://blog.csdn.net/MacaoPark/article/details/83652770

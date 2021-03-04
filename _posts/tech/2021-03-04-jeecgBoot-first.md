@@ -23,33 +23,33 @@ QQ交流群：②769925425、①284271917、③816531124
 
 ```
 
-###技术架构：
+### 技术架构：
 
-####后端技术： `SpringBoot_2.1.3.RELEASE + Mybatis-plus_3.1.2 + Shiro_1.4.0 + Jwt_3.7.0  + Swagger-ui + Redis `
-####前端技术： `Ant-design-vue + Vue + Webpack`
-####其他技术： `Druid（数据库连接池）、Logback（日志工具） 、poi（Excel工具）、Quartz（定时任务）、lombok（简化代码）`
-####项目构建： `Maven、Jdk8`
+#### 后端技术： `SpringBoot_2.1.3.RELEASE + Mybatis-plus_3.1.2 + Shiro_1.4.0 + Jwt_3.7.0  + Swagger-ui + Redis `
+#### 前端技术： `Ant-design-vue + Vue + Webpack`
+#### 其他技术： `Druid（数据库连接池）、Logback（日志工具） 、poi（Excel工具）、Quartz（定时任务）、lombok（简化代码）`
+#### 项目构建： `Maven、Jdk8`
 
-###前端开发必读文档：
+### 前端开发必读文档：
 
-####前端UI组件： `Ant Design of Vue`
+#### 前端UI组件： `Ant Design of Vue`
 [https://www.antdv.com/docs/vue/introduce](https://www.antdv.com/docs/vue/introduce)
-####报表UI组件：`viser-vue`
+#### 报表UI组件：`viser-vue`
 [https://viserjs.gitee.io/demo.html#/viser/bar/basic-bar](https://viserjs.gitee.io/demo.html#/viser/bar/basic-bar)
-####`VUE`基础知识：
+#### `VUE`基础知识：
 [https://cn.vuejs.org/v2/guide](https://cn.vuejs.org/v2/guide)
-####`Ant Design Vue Pro`：
+#### `Ant Design Vue Pro`：
 [https://pro.loacg.com/docs/getting-started
 ](https://pro.loacg.com/docs/getting-started
 )
-###JeecgBoot采用前后分离架构，官方推荐前后端都用IDEA
+### JeecgBoot采用前后分离架构，官方推荐前后端都用IDEA
 
  前端开发： IDEA 或  Webstrom
  
  后端开发： IDEA 或 Eclipse
  
  
-####前端环境安装（开发工具—帮助文档）
+#### 前端环境安装（开发工具—帮助文档）
 
 ```
 序号	工具	描述	参考
@@ -59,7 +59,7 @@ QQ交流群：②769925425、①284271917、③816531124
 
 ```
 
-####配置Nodejs镜像
+#### 配置Nodejs镜像
 
 ```
 npm config set registry https://registry.npm.taobao.org --global
@@ -69,7 +69,7 @@ yarn config set registry https://registry.npm.taobao.org --global
 yarn config set disturl https://npm.taobao.org/dist --global
 
 ```
-####后端环境安装（开发工具—帮助文档）
+#### 后端环境安装（开发工具—帮助文档）
 
 后端开发建议采用IDEA，方便多Maven模块开发，热部署请集成JRebel。
 

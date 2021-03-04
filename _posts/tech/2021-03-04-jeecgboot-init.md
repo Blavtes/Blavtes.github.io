@@ -16,11 +16,11 @@ description:  jeecgBoot 前后端工程如何启动
 
 展开右边工具栏 `Maven Projects`等待同步完成。
 
-###配置文件修改：
+### 配置文件修改：
 
 本地开发修改`/jeecg-boot-module-system/src/main/resources/application-dev.yml`
 
-####数据库配置
+#### 数据库配置
 
 ```
 datasource:

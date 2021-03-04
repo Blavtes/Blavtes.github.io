@@ -51,13 +51,15 @@ QQ交流群：②769925425、①284271917、③816531124
  
 #### 前端环境安装（开发工具—帮助文档）
 
-```
-序号	工具	描述	参考
-1	Nodejs/Npm安装/Cnpm安装	JavaScript运行环境，此处使用到它的包管理器npm	https://my.oschina.net/jeecg/blog/4277939
-2	Yarn安装	下载包工具	https://my.oschina.net/jeecg/blog/4278012
-3	WebStorm安装与使用（也可用IDEA）	WEB前端开发工具	https://blog.csdn.net/u011781521/article/details/53558979
 
-```
+-----------------------------
+| 序号	| 工具	| 描述 |	参考 |
+| --- | :-----:   | :-----:  | :----: |
+| 1 |	Nodejs/Npm安装/Cnpm安装	| JavaScript运行环境，此处使用到它的包管理器npm	| https://my.oschina.net/jeecg/blog/4277939 |
+| 2 |	Yarn安装	| 下载包工具 |	https://my.oschina.net/jeecg/blog/4278012 |
+| 3	| WebStorm安装与使用（也可用IDEA）|	WEB前端开发工具 |	https://blog.csdn.net/u011781521/article/details/53558979 |
+
+-----------------------------
 
 #### 配置Nodejs镜像
 

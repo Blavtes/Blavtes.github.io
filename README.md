@@ -1,6 +1,6 @@
 ### 我的博客
 
-地址：[http://yscos.top](http://yscos.top)
+地址：[http://yyzzhh.top](http://yyzzhh.top)
 
 ### 安装说明
 
